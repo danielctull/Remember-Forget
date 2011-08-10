@@ -15,12 +15,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	
-	NSString *string = [[@"" remember] remember];
+	NSString *string = [[[[[@"" remember] remember] remember] remember] remember];
 	
-	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), [string rememberCount]);
-	
-	[string forget];
-	[string forget];
+	while ([string rememberCount] > 0) {
+		NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), [string rememberCount]);
+		[string forget];
+	}
 	
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
