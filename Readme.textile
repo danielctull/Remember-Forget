@@ -4,12 +4,12 @@ This project adds memory management back to ARC, also giving an accurate "rememb
 
 To use, simply call remember and forget on an object:
 
-	<pre>NSDate *date = [NSDate dateWithTimeIntervalSince1970:-11491632000];
-	[[date remember] remember];
+<pre>NSDate *date = [NSDate dateWithTimeIntervalSince1970:-11491632000];
+[[date remember] remember];
 	
-	// Though we should always remember this date, we do actually forget it:
-	[date forget];
-	[date forget];</pre>
+// Though we should always remember this date, we do actually forget it:
+[date forget];
+[date forget];</pre>
 
 
 
