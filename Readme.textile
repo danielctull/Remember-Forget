@@ -2,6 +2,17 @@ h1. Remember/Forget
 
 This project adds memory management back to ARC, also giving an accurate "rememberCount". I had to use "remember" and "forget" because the compiler complains about using retain and release.
 
+To use, simply call remember and forget on an object:
+
+	NSDate *date = [NSDate dateWithTimeIntervalSince1970:-11491632000];
+	[[date remember] remember];
+	
+	// Though we should always remember this date, we do actually forget it:
+	[date forget];
+	[date forget];
+
+
+
 *It's a joke, get over it*
 
 *AND REALLY DON'T USE IT*

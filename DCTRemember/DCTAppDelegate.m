@@ -22,6 +22,12 @@
 		[string forget];
 	}
 	
+	NSDate *date = [NSDate dateWithTimeIntervalSince1970:-11491632000];
+	[[date remember] remember];
+	
+	// Though we should always remember this date, we do actually forget it:
+	[date forget];
+	[date forget];
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
