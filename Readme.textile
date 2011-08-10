@@ -1,0 +1,7 @@
+h1. Remember/Forget
+
+This project adds memory management back to ARC, also giving an accurate "rememberCount". I had to use "remember" and "forget" because the compiler complains about using retain and release.
+
+*It's a joke, get over it*
+
+*AND REALLY DON'T USE IT*
