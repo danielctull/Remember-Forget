@@ -12,18 +12,21 @@
 		24C6D10913F29B0200F2D9E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C6D10713F29B0200F2D9E8 /* InfoPlist.strings */; };
 		24C6D10B13F29B0200F2D9E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6D10A13F29B0200F2D9E8 /* main.m */; };
 		24C6D10F13F29B0200F2D9E8 /* DCTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6D10E13F29B0200F2D9E8 /* DCTAppDelegate.m */; };
+		24C6D11713F29B6B00F2D9E8 /* NSObject+DCTRemember.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6D11613F29B6A00F2D9E8 /* NSObject+DCTRemember.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24C6D0FC13F29B0200F2D9E8 /* DCTRemember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTRemember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C6D10013F29B0200F2D9E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		24C6D10213F29B0200F2D9E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		24C6D10613F29B0200F2D9E8 /* DCTRemember-Info.plist */ = {isa = PBXFileReference; path = "DCTRemember-Info.plist"; sourceTree = "<group>"; };
+		24C6D10613F29B0200F2D9E8 /* DCTRemember-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTRemember-Info.plist"; sourceTree = "<group>"; };
 		24C6D10813F29B0200F2D9E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24C6D10A13F29B0200F2D9E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24C6D10C13F29B0200F2D9E8 /* DCTRemember-Prefix.pch */ = {isa = PBXFileReference; path = "DCTRemember-Prefix.pch"; sourceTree = "<group>"; };
-		24C6D10D13F29B0200F2D9E8 /* DCTAppDelegate.h */ = {isa = PBXFileReference; path = DCTAppDelegate.h; sourceTree = "<group>"; };
+		24C6D10C13F29B0200F2D9E8 /* DCTRemember-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTRemember-Prefix.pch"; sourceTree = "<group>"; };
+		24C6D10D13F29B0200F2D9E8 /* DCTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTAppDelegate.h; sourceTree = "<group>"; };
 		24C6D10E13F29B0200F2D9E8 /* DCTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTAppDelegate.m; sourceTree = "<group>"; };
+		24C6D11513F29B6A00F2D9E8 /* NSObject+DCTRemember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTRemember.h"; sourceTree = "<group>"; };
+		24C6D11613F29B6A00F2D9E8 /* NSObject+DCTRemember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTRemember.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		24C6D0F113F29B0100F2D9E8 = {
 			isa = PBXGroup;
 			children = (
+				24C6D11513F29B6A00F2D9E8 /* NSObject+DCTRemember.h */,
+				24C6D11613F29B6A00F2D9E8 /* NSObject+DCTRemember.m */,
 				24C6D10413F29B0200F2D9E8 /* DCTRemember */,
 				24C6D0FF13F29B0200F2D9E8 /* Frameworks */,
 				24C6D0FD13F29B0200F2D9E8 /* Products */,
@@ -150,6 +155,7 @@
 			files = (
 				24C6D10B13F29B0200F2D9E8 /* main.m in Sources */,
 				24C6D10F13F29B0200F2D9E8 /* DCTAppDelegate.m in Sources */,
+				24C6D11713F29B6B00F2D9E8 /* NSObject+DCTRemember.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

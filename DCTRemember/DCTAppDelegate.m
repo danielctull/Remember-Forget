@@ -7,13 +7,22 @@
 //
 
 #import "DCTAppDelegate.h"
+#import "NSObject+DCTRemember.h"
 
 @implementation DCTAppDelegate
 
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	
+	NSString *string = [[@"" remember] remember];
+	
+	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), [string rememberCount]);
+	
+	[string forget];
+	[string forget];
+	
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
